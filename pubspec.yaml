@@ -1,5 +1,5 @@
 name: auto_form_builder
-description: "Auto Form Builder is a robust Flutter package for building dynamic, configuration-driven forms with advanced features such as multi-step wizards, conditional field visibility, computed fields, input masking, validation, and persistent draft saving—all with minimal boilerplate."
+description: "A Flutter package for dynamic forms with wizards, conditional fields, computed values, input masking, validation, and draft saving."
 version: 1.0.0
 homepage: https://nocorps.org/
 repository: https://github.com/KANAGARAJ-M/auto_form_builder

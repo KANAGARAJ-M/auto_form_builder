@@ -12,10 +12,10 @@ packages:
   auto_form_builder:
     dependency: "direct main"
     description:
-      path: "C:\\Users\\Kanagaraj\\Desktop\\packages\\auto_form_builder"
-      relative: false
+      path: ".."
+      relative: true
     source: path
-    version: "0.0.1"
+    version: "1.0.0"
   boolean_selector:
     dependency: transitive
     description:

@@ -1,7 +1,7 @@
-library;
+library auto_form_builder;
 
 // Core
-export 'src/auto_form.dart';
+export 'src/auto_form.dart' hide FormLayout;
 export 'src/auto_form_controller.dart';
 
 // Models
@@ -16,7 +16,7 @@ export 'src/widgets/auto_checkbox.dart';
 export 'src/widgets/auto_form_wizard.dart';
 
 // Validators
-export 'src/validators/validators.dart';
+export 'src/validators/validators.dart' hide FieldValidator;
 
 // Storage
 export 'src/storage/form_storage.dart';

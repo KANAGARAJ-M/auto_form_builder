@@ -52,6 +52,22 @@ class FormStorage {
     }
   }
 
+  /// Checks if a form draft exists in storage.
+  Future<bool> hasForm(String formId) async {
+    try {
+      if (!kIsWeb) {
+        final prefs = await SharedPreferences.getInstance();
+        return prefs.containsKey('$_keyPrefix$formId');
+      } else {
+        // For web, check in-memory storage
+        return _memoryStorage.containsKey(formId);
+      }
+    } catch (e) {
+      debugPrint('Error checking for form: $e');
+      return false;
+    }
+  }
+
   /// Deletes form data from storage.
   Future<bool> deleteForm(String formId) async {
     try {
